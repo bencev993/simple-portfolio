@@ -1,0 +1,262 @@
+body, * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #03045e;
+    background-color: #fbf8cc;
+    font-weight: 400;
+}
+
+.container {
+    padding: 0.5rem 1.7rem;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    margin-bottom: 3rem;
+}
+
+header > * {
+    flex: 1;
+    width: 100%;
+}
+
+header #name {
+    font-weight: 700;
+    font-size: 1.5rem;
+    display: none;
+}
+
+header #menu {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.125rem;
+}
+
+header #menu a {
+    padding: 0.7rem 0;
+    text-decoration: none;
+    color: #03045e;
+}
+
+header #icons {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.7rem 0;
+}
+
+#hero {
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+#hero .columns {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#hero .paragraph {
+    text-align: center;
+    padding: 0 0 3rem;
+}
+
+#hero .paragraph span {
+    font-size: 1.125rem;
+    padding: 2rem 0;
+}
+
+#hero .paragraph h3 {
+    font-size: 1.7rem;
+    padding: 0.7rem 0;
+    font-weight: 900;
+}
+
+#hero .button {
+    background-color: #f5ee84;
+    color: #03045e;
+    padding: 0.9rem 3rem;
+    border: 1px solid #c0ba66;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+#hero .columns img {
+    max-width: 80%;
+}
+
+.styled-section {
+    text-align: left;
+}
+
+.styled-section h2 {
+    padding: 1rem 0;
+}
+
+#about ul {
+    padding: 4rem 2rem;
+}
+
+#about ul li h4 {
+    padding: 3rem 0 1rem;
+    text-decoration: underline;
+    letter-spacing: 2px;
+}
+
+.styled-section img {
+    max-width: 80%;
+}
+
+.cols {
+    display: flex;
+    flex-direction: column;
+}
+
+#work p {
+    padding: 2rem 0;
+}
+
+/*---------- Media Screen ----------*/
+
+@media screen and (min-width: 600px){
+    header {
+        flex-direction: row;
+    }
+
+    #hero .columns img {
+        max-width: 50%;
+    }
+
+    .styled-section img {
+        max-width: 50%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 0 3rem;
+    }
+
+    header #name {
+        display: block;
+    }
+
+    .styled-section h2 {
+        padding: 2rem 0;
+    }
+
+    .styled-section p {
+        font-size: 1.125rem;
+    }
+    
+    #hero .columns {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #hero .paragraph {
+        height: 100%;
+        text-align: left;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    #hero .paragraph span {
+        font-size: 2rem;
+        padding: 0;
+    }
+
+    #hero .paragraph h3 {
+        font-size: 3rem;
+        padding: 1rem 0;
+    }
+
+    #hero .paragraph button {
+        max-width: 50%;
+    }
+    
+    #hero img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .styled-section img {
+        max-width: 70%;
+        height: auto;
+    }
+
+    .cols {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        padding: 1.5rem 5rem;
+    }
+
+    #hero {
+        margin: 5rem 0;
+    }
+
+    #hero .paragraph h3 {
+        font-size: 5rem;
+    }
+
+    #hero .paragraph span {
+        font-size: 1.75rem;
+    }
+
+    #hero .paragraph button {
+        font-size: 1.3rem;
+    }
+
+    #hero .columns img {
+        width: 40%;
+    }
+
+    .styled-section img {
+        max-width: 40%;
+    }
+
+    .styled-section p {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        padding: 1.5rem 10rem;
+    }
+
+    #hero .paragraph h3 {
+        font-size: 5rem;
+    }
+
+    #hero .paragraph span {
+        font-size: 1.75rem;
+    }
+
+    .styled-section p{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .container {
+        padding: 1.5rem 18rem;
+    }
+}
